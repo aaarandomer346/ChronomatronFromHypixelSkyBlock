@@ -6,6 +6,7 @@ import java.util.Random;
 public class GameLogic implements ActionListener {
     int keyNum = 0;
     int nextKeyNum = 1;
+    //
     int[] keyString = new int[100];
     Random random = new Random();
 
