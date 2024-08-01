@@ -3,9 +3,10 @@ import java.awt.*;
 
 public class GameFrame {
 
-    static JButton[] buttons = new JButton[11];
+    static JButton[] buttons = new JButton[10];
 
     void MakeFrame() {
+        buttons[0] = new JButton();
         buttons[1] = new JButton();
         buttons[2] = new JButton();
         buttons[3] = new JButton();
@@ -15,7 +16,6 @@ public class GameFrame {
         buttons[7] = new JButton();
         buttons[8] = new JButton();
         buttons[9] = new JButton();
-        buttons[10] = new JButton();
 
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -28,8 +28,8 @@ public class GameFrame {
             }
         }
 
-        for(int i = 1; i < 11; i++) {
-            frame.add(buttons[i]);
+        for (JButton button : buttons) {
+            frame.add(button);
         }
 
         frame.setVisible(true);
